@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>VERA | Arthur Johann Wilmsen Witt</title>
+
+  <meta
+    name="description"
+    content="VERA is a research project focused on reducing false positives in automated vulnerability detection through evidence correlation, machine learning and continuous learning."
+  />
+
+  <link rel="stylesheet" href="../assets/css/home.css" />
+  <link rel="stylesheet" href="../assets/css/project-detail.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="../index.html" class="logo">Arthur Johann Wilmsen Witt</a>
+
+      <ul class="nav-links">
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../research.html">Research</a></li>
+        <li><a href="../achievements.html">Achievements</a></li>
+        <li><a href="../cybersecurity.html">Cybersecurity</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="project-hero">
+      <div class="project-hero-content">
+        <span class="project-status">Cybersecurity Research Project</span>
+
+        <h1>VERA</h1>
+
+        <p>
+          Vulnerability Evidence Reasoning Architecture — a research project
+          focused on reducing false positives in automated vulnerability
+          detection through evidence correlation, machine learning and
+          continuous learning.
+        </p>
+
+        <div class="project-actions">
+          <a
+            href="https://github.com/arthurjww"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            View GitHub
+          </a>
+
+          <a href="../projects.html" class="btn btn-secondary">
+            Back to Projects
+          </a>
+        </div>
+      </div>
+
+      <div class="project-hero-icon">
+        <img src="../assets/img/projects/vera.png" alt="VERA icon" />
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="project-highlight-grid">
+        <article>
+          <span>Research</span>
+          <h3>False Positive Reduction</h3>
+          <p>
+            Investigates how intelligent validation can reduce noisy scanner
+            results.
+          </p>
+        </article>
+
+        <article>
+          <span>ML</span>
+          <h3>Evidence Classification</h3>
+          <p>
+            Uses machine learning ideas to classify evidence and estimate
+            finding confidence.
+          </p>
+        </article>
+
+        <article>
+          <span>5</span>
+          <h3>Target Vulnerabilities</h3>
+          <p>
+            Focuses on XSS, SSTI, SQL Injection, IDOR and RCE.
+          </p>
+        </article>
+
+        <article>
+          <span>Active</span>
+          <h3>Research Design</h3>
+          <p>
+            Currently in architecture definition and research planning phase.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section split">
+      <div>
+        <p class="section-label">Overview</p>
+        <h2>What is VERA?</h2>
+      </div>
+
+      <div>
+        <p>
+          VERA is a research project focused on improving the reliability of
+          automated vulnerability detection systems by analyzing multiple
+          sources of evidence before classifying a finding as valid.
+        </p>
+
+        <p>
+          Instead of relying only on payload matching or signature-based
+          detection, VERA evaluates positive evidence, negative evidence,
+          contextual information, application behavior, technology fingerprints,
+          payload history and human feedback.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-section split">
+      <div>
+        <p class="section-label">Research Motivation</p>
+        <h2>Why this research matters</h2>
+      </div>
+
+      <div>
+        <p>
+          Modern security scanners can discover thousands of potential
+          vulnerabilities, but many of these findings require manual validation
+          because they may be false positives.
+        </p>
+
+        <p>
+          This problem affects vulnerability assessment platforms, bug bounty
+          programs, security teams and small organizations with limited security
+          resources.
+        </p>
+
+        <p>
+          VERA aims to address this challenge by introducing an intelligent
+          evidence correlation architecture capable of learning from previous
+          observations and improving validation accuracy over time.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-heading">
+        <p class="section-label">Research Question</p>
+        <h2>Main investigation</h2>
+      </div>
+
+      <div class="method-card">
+        <h3>Can evidence correlation and machine learning reduce false positives?</h3>
+        <p>
+          The central research question is whether evidence correlation and
+          machine learning can reduce false positives in automated vulnerability
+          detection systems without significantly reducing detection capability.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-heading">
+        <p class="section-label">Objectives</p>
+        <h2>What VERA aims to achieve</h2>
+      </div>
+
+      <div class="feature-list">
+        <div>Reduce false positives in automated vulnerability detection.</div>
+        <div>Improve confidence estimation for vulnerability findings.</div>
+        <div>Learn from historical payload performance.</div>
+        <div>Analyze the influence of Web Application Firewalls.</div>
+        <div>Use human-assisted validation to improve future decisions.</div>
+        <div>Provide explainable security decisions.</div>
+        <div>Evaluate deep learning for evidence classification.</div>
+      </div>
+    </section>
+
+    <section class="project-section split">
+      <div>
+        <p class="section-label">Target Vulnerabilities</p>
+        <h2>Initial research scope</h2>
+      </div>
+
+      <div class="tech-list">
+        <span>Cross-Site Scripting</span>
+        <span>Server-Side Template Injection</span>
+        <span>SQL Injection</span>
+        <span>IDOR</span>
+        <span>Remote Code Execution</span>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-heading">
+        <p class="section-label">Core Components</p>
+        <h2>Architecture modules</h2>
+      </div>
+
+      <div class="method-grid">
+        <article class="method-card">
+          <h3>Evidence Engine</h3>
+          <p>
+            Collects and analyzes security evidence generated during testing.
+          </p>
+        </article>
+
+        <article class="method-card">
+          <h3>Payload Intelligence</h3>
+          <p>
+            Tracks payload performance, execution probability, false positive
+            rates and contextual behavior.
+          </p>
+        </article>
+
+        <article class="method-card">
+          <h3>WAF Tracker</h3>
+          <p>
+            Observes how defensive technologies influence payload execution
+            and validation results.
+          </p>
+        </article>
+
+        <article class="method-card">
+          <h3>Encoding Strategy Engine</h3>
+          <p>
+            Studies how payload encodings affect detection accuracy, execution
+            behavior and false positive generation.
+          </p>
+        </article>
+
+        <article class="method-card">
+          <h3>Deep Learning Classifier</h3>
+          <p>
+            Uses transformer-based models to classify evidence as positive,
+            negative or neutral.
+          </p>
+        </article>
+
+        <article class="method-card">
+          <h3>Human Feedback Learning</h3>
+          <p>
+            Incorporates analyst validation to continuously improve future
+            decisions.
+          </p>
+        </article>
+
+        <article class="method-card">
+          <h3>Explainable Confidence Engine</h3>
+          <p>
+            Provides transparent reasoning behind each classification and
+            confidence score.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section split">
+      <div>
+        <p class="section-label">Technical Stack</p>
+        <h2>Technologies and concepts</h2>
+      </div>
+
+      <div class="tech-list">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>Transformers</span>
+        <span>Evidence Correlation</span>
+        <span>Cybersecurity</span>
+        <span>Vulnerability Validation</span>
+        <span>Human Feedback</span>
+        <span>Explainable AI</span>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-heading">
+        <p class="section-label">Architecture</p>
+        <h2>System organization</h2>
+      </div>
+
+      <pre class="code-block"><code>VERA/
+├── Evidence Engine
+│   ├── Positive Evidence
+│   ├── Negative Evidence
+│   └── Neutral Evidence
+├── Payload Intelligence
+│   ├── Payload History
+│   ├── Execution Probability
+│   └── False Positive Rate
+├── WAF Tracker
+├── Encoding Strategy Engine
+├── Deep Learning Evidence Classifier
+├── Human Feedback Learning
+├── Explainable Confidence Engine
+└── Experimental Evaluation</code></pre>
+    </section>
+
+    <section class="project-section split">
+      <div>
+        <p class="section-label">Expected Contributions</p>
+        <h2>Research contribution</h2>
+      </div>
+
+      <div>
+        <p>
+          VERA investigates a new approach for automated vulnerability
+          validation by combining evidence correlation, machine learning, deep
+          learning, human feedback and continuous payload intelligence.
+        </p>
+
+        <p>
+          The expected outcome is a measurable reduction in false positives
+          while maintaining strong detection capability.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-heading">
+        <p class="section-label">Research Roadmap</p>
+        <h2>Project phases</h2>
+      </div>
+
+      <div class="feature-list">
+        <div>Research design and architecture definition.</div>
+        <div>Laboratory development for controlled vulnerability testing.</div>
+        <div>Dataset generation from positive and negative evidence.</div>
+        <div>Model training and evidence classification experiments.</div>
+        <div>Experimental evaluation and comparison with baseline scanners.</div>
+        <div>Scientific article writing and publication.</div>
+      </div>
+    </section>
+
+    <section class="project-cta">
+      <span>Research Project</span>
+
+      <h2>Follow VERA's development</h2>
+
+      <p>
+        VERA is under active research design, with future phases focused on
+        laboratory development, dataset generation, model training,
+        experimental evaluation and scientific publication.
+      </p>
+
+      <a
+        href="https://github.com/arthurjww/vera"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+        Open GitHub Profile
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Arthur Johann Wilmsen Witt. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

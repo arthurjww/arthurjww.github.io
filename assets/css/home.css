@@ -278,7 +278,40 @@ a {
     grid-template-columns: 1fr;
   }
 }
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.hero-image img {
+    width: 340px;
+    height: 340px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #30363d;
+
+    background: #161b22;
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.03),
+        0 10px 30px rgba(0,0,0,0.45);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 0 1px rgba(88,166,255,.25),
+        0 15px 40px rgba(0,0,0,.55);
+}
 @media (max-width: 600px) {
   .hero {
     padding-top: 72px;

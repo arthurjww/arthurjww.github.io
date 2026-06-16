@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FNDetector | Arthur Johann Wilmsen Witt</title>
+
+  <meta
+    name="description"
+    content="FNDetector is an AI-assisted fake news detection project created for a 2025 science fair and later evolved into a Flask + NLP portfolio project."
+  />
+
+  <link rel="stylesheet" href="../assets/css/home.css" />
+  <link rel="stylesheet" href="../assets/css/project-detail.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="../index.html" class="logo">Arthur Johann Wilmsen Witt</a>
+
+      <ul class="nav-links">
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../projects.html" class="active">Projects</a></li>
+        <li><a href="../research.html">Research</a></li>
+        <li><a href="../achievements.html">Achievements</a></li>
+        <li><a href="../cybersecurity.html">Cybersecurity</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="project-hero">
+      <div class="project-hero-content">
+        <span class="project-status">Award-Winning AI Project</span>
+
+        <h1>FNDetector</h1>
+
+        <p>
+          AI-assisted fake news detection platform originally created for a
+          2025 high-school science fair and later evolved into a portfolio-ready
+          Flask, NLP and machine learning application.
+        </p>
+
+        <div class="project-actions">
+          <a
+            href="https://github.com/arthurjww/FNDetector"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            View Repository
+          </a>
+
+          <a href="../achievements.html" class="btn btn-secondary">
+            View Achievements
+          </a>
+        </div>
+      </div>
+
+      <div class="project-hero-icon">
+        <img src="../assets/img/projects/fndetector.png" alt="FNDetector icon" />
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="project-highlight-grid">
+        <article>
+          <span>2025</span>
+          <h3>Science Fair Origin</h3>
+          <p>
+            Started as a high-school scientific fair project focused on the
+            social problem of misinformation.
+          </p>
+        </article>
+
+        <article>
+          <span>1st Place</span>
+          <h3>Local Recognition</h3>
+          <p>
+            Won first place at the original science fair where the project was
+            presented.
+          </p>
+        </article>
+
+        <article>
+          <span>MostraTEC</span>
+          <h3>International-Level Fair</h3>
+          <p>
+            Presented at MostraTEC, one of the largest science and technology
+            fairs in Latin America.
+          </p>
+        </article>
+
+        <article>
+          <span>3rd Place</span>
+          <h3>Computer Science</h3>
+          <p>
+            Achieved third place in Computer Science, reinforcing the technical
+            relevance of the project.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section split">
+      <div>
+        <p class="section-label">Overview</p>
+        <h2>What is FNDetector?</h2>
+      </div>
+
+      <div>
+        <p>
+          FNDetector is an educational and applied artificial intelligence
+          project designed to help users evaluate suspicious news claims.
+          It combines a web interface, a Flask backend, local labeled data,
+          BERT embeddings and an explainable legacy verification baseline.
+        </p>
+
+        <p>
+          The goal is not to replace professional fact-checking, but to provide
+          an assistive signal that encourages users to investigate information
+          before sharing it.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-heading">
+        <p class="section-label">Detection Approaches</p>
+        <h2>Two complementary analysis modes</h2>
+      </div>
+
+      <div class="method-grid">
+        <article class="method-card">
+          <h3>BERT Classifier</h3>
+          <p>
+            Uses embeddings from the Portuguese BERT model
+            <strong>neuralmind/bert-base-portuguese-cased</strong> with a
+            trained logistic regression classifier to estimate whether a claim
+            resembles true or fake examples from the dataset.
+          </p>
+        </article>
+
+        <article class="method-card">
+          <h3>Legacy Verifier</h3>
+          <p>
+            Searches for related articles, extracts readable text, compares
+            textual similarity and returns a transparent corroboration score
+            based on retrieved sources.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section split">
+      <div>
+        <p class="section-label">Technical Stack</p>
+        <h2>Technologies used</h2>
+      </div>
+
+      <div class="tech-list">
+        <span>Python</span>
+        <span>Flask</span>
+        <span>BERT</span>
+        <span>Transformers</span>
+        <span>Scikit-Learn</span>
+        <span>Logistic Regression</span>
+        <span>NLP</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="section-heading">
+        <p class="section-label">Architecture</p>
+        <h2>How the project is organized</h2>
+      </div>
+
+      <pre class="code-block"><code>FNDetector/
+├── app.py
+├── data/training/
+├── docs/
+├── models/
+├── src/fndetector/
+├── web/pages/
+├── web/static/
+├── requirements.txt
+└── README.md</code></pre>
+    </section>
+
+    <section class="project-section">
+      <div class="section-heading">
+        <p class="section-label">Core Features</p>
+        <h2>What the project demonstrates</h2>
+      </div>
+
+      <div class="feature-list">
+        <div>Flask web application with multiple user-facing pages.</div>
+        <div>BERT-based fake news classification pipeline.</div>
+        <div>Legacy similarity-based verification baseline.</div>
+        <div>Training-data upload endpoint for new samples.</div>
+        <div>Local documentation library served through stable routes.</div>
+        <div>Portfolio-ready project structure with separated modules.</div>
+      </div>
+    </section>
+
+    <section class="project-section split">
+      <div>
+        <p class="section-label">Impact</p>
+        <h2>Why this project matters</h2>
+      </div>
+
+      <div>
+        <p>
+          FNDetector connects artificial intelligence with a real social issue:
+          misinformation. It was built not only as a technical experiment, but
+          also as a project that could be presented to judges, students,
+          teachers and the public.
+        </p>
+
+        <p>
+          Its evolution from a science fair prototype into a structured
+          software repository shows both research communication and practical
+          engineering skills.
+        </p>
+      </div>
+    </section>
+
+    <section class="project-cta">
+      <span>Repository</span>
+      <h2>Explore FNDetector on GitHub</h2>
+      <p>
+        View the source code, documentation, project structure and development
+        history of FNDetector.
+      </p>
+
+      <a
+        href="https://github.com/arthurjww/FNDetector"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+        Open GitHub Repository
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Arthur Johann Wilmsen Witt. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
